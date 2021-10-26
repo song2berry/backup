@@ -1,0 +1,52 @@
+
+#header {line-height: 100px;}
+#header .container {display: flex; width: 1200px; margin: 0 auto; padding: 0 15px;}
+#header nav {margin-left: auto;}
+#header nav>ul {display: flex;}
+#header nav>ul>li>a {display: block; position: relative; padding: 0 30px;}
+#header nav>ul>li~li>a:after {content: ""; display: block; width: 1px; height: 12px;
+    background: #444; position: absolute; top: 50%; left: 0;
+    transform: translateY(-50%);}/* 메뉴 중간중간bar  만드는거*/
+
+#header .right {font-size: 20px; margin-left: 40px;}
+
+
+#main_visual {position: relative;}
+#main_visual figure {height: 600px;}
+#main_visual .itm01 {background: url(../lib/base/m_visual3.jpg) no-repeat 
+    center center/cover;}
+#main_visual .itm02 {background: url(../lib/base/brick-g91a3d9602_1920.jpg) no-repeat 
+    center center/cover;}
+#main_visual .itm03 {background: url(../lib/base/kitchen-gcc5b5cfde_1920.jpg) no-repeat 
+    center center/cover;}
+
+/*중요*/
+#main_visual .container {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 1200px; padding: 15px; color: #fff;/*text-align:center;*/}
+
+#main_visual h2 {font-size: 18px; font-weight: 100; letter-spacing: 1em; margin-bottom: 15px;}
+#main_visual p {font-size: 15px; margin-bottom: 40px; line-height: 1.6;}
+
+#content01 {position: relative; padding: 150px 0; text-align: center;}
+#content01 h2 {font-size: 18px; font-weight: 100; letter-spacing: 1em; margin-bottom: 15px;}
+#content01 p {font-size: 15px; margin-bottom: 40px; line-height: 1.6;}
+#content01 .container {width: 1200px; margin: 0 auto;}
+#content01 .container figure {padding: 0 15px;}
+#content01 .container figure img {max-width: 100%;}
+
+#content01 .slick-dots {display: flex; justify-content: center;}
+#content01 .slick-dots li {width: 10px; height: 6px; border-radius: 3px;
+    background: #444; margin: 30px 4px;}
+#content01 .slick-dots li.slick-active {background: rgb(182, 182, 182);}
+#content01 .slick-dots li button {display: none;}
+
+#content01 .btn i {position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%);
+    font-size: 20px; padding: 10px; background: #ddd; border-radius: 50%;}
+
+#content01 .btn i.xi-angle-left {margin-left: -700px;}
+#content01 .btn i.xi-angle-right {margin-left: 700px;}
+
+#footer {padding: 80px 0 100px 0; background: #444; color: #fff;}
+#footer .container {display: flex; justify-content: space-between; width: 1200px;
+    margin: 0 auto; padding: 0 15px;}
+#footer i {font-size: 30px; padding: 10px; background: rgb(88, 88, 88); border-radius: 50%;}
