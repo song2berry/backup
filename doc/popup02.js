@@ -47,7 +47,7 @@ $(window).on('scroll', function(){
   //   $('#toTop').fadeOut()
   // }
   sct>400 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
-  $('#scroll_banner').css({top:300+sct})
+  $('#scroll_banner').css({top:300+sct});
 });
 
 $('#left_banner i').on('click', function(){
