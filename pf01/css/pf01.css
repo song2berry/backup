@@ -7,40 +7,39 @@
 #header nav>ul>li~li>a:after {content:"";display:block;width:1px;height:12px;background:#333;
     position:absolute;top:50%;left:0;transform:translateY(-50%)}
 
-#header .right {font-size:20px;margin-left:40px;}
+#header .right {font-size:20px;margin-left:30px;}
 
 
-#main_visual {position:relative;}
-#main_visual figure {height:600px;}
-#main_visual .itm01 {background:url(../lib/base/m_visual3.jpg) no-repeat center center/cover;}
-#main_visual .itm02 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
-#main_visual .itm03 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
-
-#main_visual .container {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1200px;padding:0 15px;color:#fff;text-align:center;}
-#main_visual h2 {font-size:18px;font-weight:100;letter-spacing:1em;margin-bottom:15px;}
-#main_visual p {font-size:12px;margin-bottom:40px;line-height:1.6;}
-
-#main_visual span {display: block; width: 100px; height: 200px;
-    border-top: 10px solid rgba(255, 255, 255, 0.5); border-left: 10px solid rgba(255, 255, 255, 0.5);
-    position: absolute; top: 50%; left: 50%;}
-#main_visual span.left {transform: translate(-50%,-50%) rotate(-45deg);margin-left: -700px;}
-#main_visual span.right {transform: translate(-50%,-50%) rotate(135deg);margin-left: 700px;}
-#main_visual .list {display: flex; width: 1200px; height: 40px; line-height: 40px; position: absolute; bottom: 0; left: 50%;
-    transform: translateX(-50%); color: #fff; background: orange; }
-#main_visual .list li {flex: 1; text-align: center; color: #fff; position: relative;}
-#main_visual .list li~li {border-left: 1px solid #fff;}
-#main_visual .list li:before {content: ""; position: absolute; top: 0; left: 0; width: 0;
-    height: 100%; background: #f00; z-index: -1;}
-#main_visual .list li.on:before {width: 100%;  transition: 3s;}
 
 
-#main_visual .photo {position: absolute; top: 60px; right: 300px; height: 200px; height: 200px;
-    border-radius: 50%; overflow: hidden; transition: 3s;}
-#main_visual .photo img {width: 100%;}
+#visual .main_slider {color:#fff;}
+#visual .main_slider figure {height:600px;position:relative;}
+#visual .main_slider .itm01 {background:url(../img/main_visual0101.jpg) no-repeat center center/cover}
+#visual .main_slider .itm02 {background:url(../img/main_visual02.jpg) no-repeat center center/cover}
+#visual .main_slider .itm03 {background:url(../img/main_visual03.jpg) no-repeat center center/cover}
+
+#visual .main_slider figure .container {position:absolute;top:50%;left:55%;transform:translate(-50%,-50%);width:1200px;}
+
+#visual .main_slider figure h3 {font-size:35px; font-weight: 100; line-height: 40px; margin-bottom:30px; 
+    letter-spacing: 0.5em; opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on h3 {opacity:1;transform:translateY(0);transition:1s;}
+
+#visual .main_slider figure h2 {font-size:35px; font-weight: 400; line-height: 30px; margin-bottom:30px; 
+ opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on h2 {opacity:1;transform:translateY(0);transition:1s;}
+
+#visual .main_slider figure p {font-size:16px;font-weight:100;margin-bottom:20px;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on p {opacity:1;transform:translateY(0);transition:1s 1s;}
+#visual .main_slider figure a {display:block; text-align: center; background: darkgrey; width:100px;
+    margin:0 auto;line-height:30px;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on a {opacity:1;transform:translateY(0);transition:1s 1.5s;}
+
 
 
 #content01 {position:relative;padding:150px 0;text-align:center;}
-#content01 h2 {font-size:18px;font-weight:100;letter-spacing:1em;margin-bottom:15px;}
+#content01 h2 {font-size:24px;font-weight:100;letter-spacing:0.5em;margin-bottom:15px;}
+#content01 h2:after {content: ""; display: block; width: 20px; height: 1px; background: rgb(92, 92, 92);
+    margin: 30px auto;}
 #content01 p {font-size:12px;margin-bottom:40px;line-height:1.6;}
 #content01 .container {width:1200px;margin:0 auto;}
 #content01 .container figure {padding:0 15px;}
@@ -56,6 +55,49 @@
 
 #content01 .btn i.xi-angle-left {margin-left:-585px;}
 #content01 .btn i.xi-angle-right {margin-left:585px;}
+
+
+
+
+
+
+#content02 {padding: 150px 0; text-align: center;}
+#content02 .container {width: 1900px; margin: 0 auto;}
+#content02 .container {padding: 150px 0; background: url(../img/coffee02.jpg) no-repeat center center/
+    cover; background-attachment: fixed; color: #fff; text-align: center;}
+#content02 .container h2 {font-size: 24px; font-weight: 100; letter-spacing: 0.5em; margin-bottom: 30px;}
+#content02 .container p {font-size: 14px; font-weight: 200; letter-spacing: 0.03em; margin-bottom: 30px;}
+#content02 .container a {display: block; font-size:13px; text-align: center; font-weight: 100; 
+    width: 150px; border: 1px solid #ddd; margin: 0 auto; line-height: 30px;}
+#content02 .container a:hover {background: #444; color: #fff;}
+
+
+
+#content03 {padding: 150px 0; text-align: center;}
+#content03 h2 {font-size: 24px; font-weight: 100; letter-spacing: 0.5em; margin-bottom: 10px;}
+#content03 p {font-size: 16px; font-weight: 200; letter-spacing: -0.025em; margin-bottom: 30px;}
+#content03 p:after {content: ""; display: block; width: 20px; height: 1px; background: rgb(92, 92, 92);
+    margin: 30px auto;}
+#content03 .container {display: flex; width: 1200px; margin: 0 auto;}
+#content03 .container figure {flex: 1; padding: 0 15px; margin-bottom: 30px;}
+#content03 .more span {display:block; font-size: 15; font-weight: 200; line-height: 19px; margin-bottom: 30px;}
+#content03 .more a {display: block; font-size: 14px; width: 150px; border: 1px solid #ddd; text-align: center; 
+    margin: 0 auto; line-height: 30px;}
+#content03 .more a:hover {background: #444; color: #fff;}
+
+#content04 {padding: 150px 0; text-align: center;}
+#content04 h2 {font-size: 24px; font-weight: 100; letter-spacing: 0.5em; margin-bottom: 10px;}
+#content04 p {font-size: 16px; font-weight: 200; letter-spacing: -0.025em; margin-bottom: 30px;}
+#content04 p:after {content: ""; display: block; width: 20px; height: 1px; background: rgb(92, 92, 92);
+    margin: 30px auto;}
+#content04 .container {display: flex; width: 1200px; margin: 0 auto;}
+#content04 .container figure {flex: 1; padding: 0 15px; margin-bottom: 30px;}
+#content04 .more span {display:block; font-size: 15; font-weight: 200; line-height: 19px; margin-bottom: 30px;}
+#content04 .more a {display: block; font-size: 14px; width: 150px; border: 1px solid #ddd; text-align: center; 
+    margin: 0 auto; line-height: 30px;}
+#content04 .more a:hover {background: #444; color: #fff;}
+
+
 
 #footer {padding:80px 0 100px 0;background:#333;color:#fff;}
 
