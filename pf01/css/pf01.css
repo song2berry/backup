@@ -14,9 +14,9 @@
 
 #visual .main_slider {color:#fff;}
 #visual .main_slider figure {height:600px;position:relative;}
-#visual .main_slider .itm01 {background:url(../img/main_visual0101.jpg) no-repeat center center/cover}
-#visual .main_slider .itm02 {background:url(../img/main_visual02.jpg) no-repeat center center/cover}
-#visual .main_slider .itm03 {background:url(../img/main_visual03.jpg) no-repeat center center/cover}
+#visual .main_slider .itm01 {background:url(../img/main_visual001.jpg) no-repeat center center/cover}
+#visual .main_slider .itm02 {background:url(../img/main_visual003.jpg) no-repeat center center/cover}
+
 
 #visual .main_slider figure .container {position:absolute;top:50%;left:55%;transform:translate(-50%,-50%);width:1200px;}
 
@@ -96,6 +96,19 @@
 #content04 .more a {display: block; font-size: 14px; width: 150px; border: 1px solid #ddd; text-align: center; 
     margin: 0 auto; line-height: 30px;}
 #content04 .more a:hover {background: #444; color: #fff;}
+
+
+#content05 {padding: 150px 0;background: rgb(231, 201, 102);}
+#content05 h2 {position: absolute; margin-left: 760px; font-size: 24px; font-weight: 100; 
+    letter-spacing: 0.5em; margin-bottom: 10px;}
+#content05 .container {position: relative; display: flex; width: 1200px;  height: 800px; 
+    margin: 0 auto; overflow: hidden;}
+#content05 .container .new01 img {width: 100%; transition: 0.5s;}
+#content05 .container .new01:hover img {transform: scale(1.1);}
+#content05 .container .new02 {position: absolute; margin-left: 558px; margin-top: 95px;}
+#content05 .container .new02 img {width: 100%; transition: 0.5s;}
+#content05 .container .new02:hover img {transform: scale(1.1);}
+
 
 
 
