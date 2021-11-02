@@ -22,7 +22,7 @@ $(function(){
     
     
         $('#mv01').YTPlayer({
-            videoURL:'https://youtu.be/fKGK_s9Y964',
+            videoURL:'https://youtu.be/X5Dg8WCMOww',
             containment:'self',
             autoPlay:true, 
             mute:true, 
@@ -33,14 +33,14 @@ $(function(){
             optimizeDisplay:false,
         });
     
-        $('#visual i.xi-pause').on('click', function(){
-            $('#bgndVideo').YTPPause();
+        $('#movie02 i.xi-pause').on('click', function(){
+            $('#mv01').YTPPause();
         });
-        $('#visual i.xi-play').on('click', function(){
-            $('#bgndVideo').YTPPlay();
+        $('#movie02 i.xi-play').on('click', function(){
+            $('#mv01').YTPPlay();
         });
-        $('#visual i.xi-tv').on('click', function(){
-            $('#bgndVideo').YTPFullscreen();
+        $('#movie02 i.xi-tv').on('click', function(){
+            $('#mv01').YTPFullscreen();
         });
     //----------------------------------
     });
