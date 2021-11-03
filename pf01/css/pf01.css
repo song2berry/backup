@@ -4,7 +4,7 @@
 #header nav {margin-left:auto;}
 #header nav>ul {display:flex;}
 #header nav>ul>li>a {display:block;position:relative;padding:0 30px;}
-#header nav>ul>li~li>a:after {content:"";display:block;width:1px;height:12px;background:#333;
+#header nav>ul>li~li>a::after {content:"";display:block;width:1px;height:12px;background:#333;
     position:absolute;top:50%;left:0;transform:translateY(-50%)}
 
 #header .right {font-size:20px;margin-left:30px;}
@@ -83,7 +83,7 @@
 #content03 .more span {display:block; font-size: 15; font-weight: 200; line-height: 19px; margin-bottom: 30px;}
 #content03 .more a {display: block; font-size: 14px; width: 150px; border: 1px solid #ddd; text-align: center; 
     margin: 0 auto; line-height: 30px;}
-#content03 .more a:hover {background: #444; color: #fff;}
+#content03 .more a:hover {background: #6c50a7; color: #fff;}
 
 #content04 {padding: 150px 0; text-align: center;}
 #content04 h2 {font-size: 24px; font-weight: 100; letter-spacing: 0.5em; margin-bottom: 10px;}
@@ -95,24 +95,65 @@
 #content04 .more span {display:block; font-size: 15; font-weight: 200; line-height: 19px; margin-bottom: 30px;}
 #content04 .more a {display: block; font-size: 14px; width: 150px; border: 1px solid #ddd; text-align: center; 
     margin: 0 auto; line-height: 30px;}
-#content04 .more a:hover {background: #444; color: #fff;}
+#content04 .more a:hover {background: #6c50a7; color: #fff;}
 
 
 #content05 {padding: 150px 0;background: rgb(231, 201, 102);}
-#content05 h2 {position: absolute; margin-left: 760px; font-size: 24px; font-weight: 100; 
+#content05 h2 {position: absolute; margin-left: 760px; padding: 15px 0; font-size: 24px; font-weight: 100; 
     letter-spacing: 0.5em; margin-bottom: 10px;}
 #content05 .container {position: relative; display: flex; width: 1200px;  height: 800px; 
-    margin: 0 auto; overflow: hidden;}
-#content05 .container .new01 img {width: 100%; transition: 0.5s;}
+    margin: 0 auto;}
+#content05 .container .new01 {overflow: hidden;}
+#content05 .container .new02 {overflow: hidden;}
+#content05 .container .new01 img {width: 100%; transition: 0.4s;}
 #content05 .container .new01:hover img {transform: scale(1.1);}
 #content05 .container .new02 {position: absolute; margin-left: 558px; margin-top: 95px;}
 #content05 .container .new02 img {width: 100%; transition: 0.5s;}
 #content05 .container .new02:hover img {transform: scale(1.1);}
 
+#content06 {padding: 150px 0; text-align: center;}
+#content06 .container {width: 1900px; margin: 0 auto;}
+#content06 .container {position: relative; padding: 150px 0; background: url(../img/members02.jpg) no-repeat center; 
+    color: #fff; text-align: center;}
+#content06 .container a {position: absolute; display:block; font-size:14px; text-align: center; font-weight: 300; 
+    width: 140px; border: 1px solid #ddd; margin: 50px 0 0 950px; line-height: 30px; }
+#content06 .container a:hover {background: rgb(255, 255, 255); color: rgb(0, 0, 0);}
+
+#customer {padding: 150px 0; background: #e0e0e0;}
+#customer .container {position: relative; display: flex; width: 1200px; margin: 0 auto;}
+#customer h2 {position: absolute; font-size: 20px;  text-align: center;
+    color: #fff; opacity: 1; transform:translateY(25px) translateX(25px);
+    transition: 0.4s; z-index: 999; text-shadow: 0 0 2px rgb(58, 58, 58);}
+#customer h2 i {font-size: 18px; transform: translateY(0.5px);}
+
+#customer img {max-width: 100%;}
+#customer figure {flex: 1; padding: 0 15px;}
+#customer .ctm_img {overflow: hidden;}
+#customer figure img {transition: 0.4s;}
+#customer figure:hover img {transform: scale(1.1); filter: brightness(140%);}
+#customer figure:hover h2 {font-size: 22px; font-weight: 600; color:#ddd; 
+    transform:translateY(22px) translateX(22px); z-index: 999;}
 
 
 
-#footer {padding:80px 0 100px 0;background:#333;color:#fff;}
 
-#footer .container {display:flex;justify-content:space-between;width:1200px;margin:0 auto;padding:0 15px;}
-#footer i {font-size:30px;padding:10px;background:#444;border-radius:50%;}
+#footer {display: block; padding:90px 0 90px 0;background: #3a3a3a;color:#fff;}
+#footer .container {width:1200px;
+        margin:0 auto;}
+        
+#footer .container .sns {position: absolute; text-align: right; padding: 0 0 0 1060px; }
+#footer i {font-size:25px;padding:10px;background:#666;border-radius:50%;}
+#footer .bottom_logo {display: block; width: 350px;}
+#footer img {width: 100%; margin-bottom: 20px;}
+#footer .bottom_nav {display: flex;}
+
+#footer nav>ul {display:block;}
+#footer nav>ul>li>a {position:relative; font-size: 14px; line-height: 25px;
+    padding:0 20px;}
+#footer nav>ul>li>a~a:after {content:"";display:block;width:1px;height:12px;
+    background:rgb(255, 255, 255); position:absolute;
+    top:50%;left:0;transform:translateY(-50%)}
+
+
+#footer address {position:relative;font-size: 13px; font-weight: 100;
+    padding:0 20px; margin-top: 20px; line-height: 20px;}
