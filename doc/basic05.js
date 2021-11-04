@@ -49,10 +49,10 @@ $(function(){
         pauseOnFocus:false,  
     });
     
-    $('#product04 i.xi-arrow-left').on('click', function(){
+    $('#product04 i.xi-angle-left').on('click', function(){
         $('.pr_slider02').slick('slickPrev');
     });
-    $('#product04 i.xi-arrow-right').on('click', function(){
+    $('#product04 i.xi-angle-right').on('click', function(){
         $('.pr_slider02').slick('slickNext');
     });
     
