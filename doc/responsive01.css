@@ -14,13 +14,17 @@
     #header h1 {padding:0 15px;}
     #header h1 img {width:200px;}
     #header .container {display:flex;width:auto;margin:0 auto;}
-    #header .container nav {display:none;position:fixed;top:0;left:0;background:#fff;width:calc(100% - 80px);height:100vh;padding:100px 15px 0 15px;border-right:1px solid #ddd;z-index:999;}
+    #header .container nav {display:none;position:fixed;top:0;left:0;background:#fff;
+        width:calc(100% - 80px); height:100vh; padding:100px 15px 0 15px;
+        border-right:1px solid #ddd;z-index:999;}
     #header .container nav>ul {display:flex;flex-direction:column;font-size:16px;}
     #header .container nav>ul>li {position:relative;line-height:40px;}
     #header .container nav>ul>li>a {display:block;padding:0 15px;}
-    #header .container nav>ul>li~li:before {content:"";display:none;width:1px;height:16px;background:#ddd;position:absolute;top:42px;left:0;}
+    #header .container nav>ul>li~li:before {content:"";display:none;width:1px;height:16px;background:#ddd;
+        position:absolute;top:42px;left:0;}
     #header .container nav>ul>li~li {border-top:1px solid #ddd;}
-    #header i {display:block;position:fixed;top:30px;right:15px;font-size:33px;background:#ddd;padding:5px;z-index:999;}
+    #header i {display:block;position:fixed;top:30px;right:15px;font-size:33px;background:#ddd;padding:5px;
+        z-index:999;}
 }
 
 #visual {position:relative;color:#fff;}
@@ -33,8 +37,8 @@
     #visual {position:relative;color:#fff;}
     #visual .main_silder {position:relative;background:url(../lib/base/main_visual01.jpg);height:600px;}
     #visual .slogan {position:absolute;top:50%;left:50%;width:100%;transform:translate(-50%,-50%);padding:0 15px;}
-    #visual .slogan h2 {font-size:40px;font-weight:100;margin-bottom:20px;}
-    #visual .slogan p {font-size:14px;line-height:20px;}
+    #visual .slogan h2 {font-size:40px;font-weight:100;margin-bottom:20px; text-align: center;}
+    #visual .slogan p {font-size:14px;line-height:20px; text-align: center;}
 }
 
 #customer {padding:100px 0;text-align:center;}
