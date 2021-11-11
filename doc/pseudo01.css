@@ -20,11 +20,12 @@ section img {max-width: 100%;}
 #sec04 h2::after {content: ""; display: inline-block; width: 40px; height: 2px; background: #f00;
     vertical-align: middle; margin: 0 20px;}
 
-#sec05 h2::after {background: url(../lib/base/daisy.png);}
+#sec05 h2::after {content: ""; display: inline-block; width: 30px; height: 30px; background:
+    url(../lib/base/daisy.png)center center/cover; vertical-align: top;}
 
-#sec06 h2::before {content: ""; display: inline-block; width: 40px; height: 2px; background:
+#sec06 h2::before {content: ""; display: inline-block; width: 40px; height: 40px; background:
     url(../lib/base/daisy.png) center center/cover; vertical-align: middle; margin: 0 20px;}
-#sec06 h2::after {content: ""; display: inline-block; width: 40px; height: 2px; background:
+#sec06 h2::after {content: ""; display: inline-block; width: 40px; height: 40px; background:
     url(../lib/base/daisy.png) center center/cover; vertical-align: middle; margin: 0 20px;}
 
 #sec07 {line-height: 30px;}
