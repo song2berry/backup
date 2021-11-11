@@ -64,15 +64,14 @@ $(function(){
               },
           ]
     });
-    
-    $('#content05 i.xi-angle-left').on('click', function(){
-        $('.con05_slider').slick('slickPrev');
-    });
-    $('#content05 i.xi-angle-right').on('click', function(){
-        $('.con05_slider').slick('slickNext');
-    });
-    
 
+    $('#content05 i.xi-angle-left').on('click', function(){
+      $('.con05_slider').slick('slickPrev');
+  });
+    $('#content05 i.xi-angle-right').on('click', function(){
+      $('.con05_slider').slick('slickNext');
+  });
+ 
     
     
     //-----------------------------------------------------
