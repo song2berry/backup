@@ -34,15 +34,6 @@ $(function(){
     });
 
 
-    $('#header i.xi-bars').on('click', function(){
-        $('nav').slideToggle();
-     });
-     
-     $(window).on('resize', function(){
-         if($(window).width()>768) $('nav').removeAttr("style")
-     });
-
-
 
       
     $('.con05_slider').slick({
@@ -73,6 +64,15 @@ $(function(){
   });
  
     
+
+  $('#header i.xi-bars').on('click', function(){
+    $('nav').slideToggle();
+ });
+ 
+ $(window).on('resize', function(){
+     if($(window).width()>768) $('nav').removeAttr("style")
+ });
+
     
     //-----------------------------------------------------
     })
