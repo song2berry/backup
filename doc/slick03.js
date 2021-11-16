@@ -11,7 +11,8 @@ const mainSlider=$('.main_slider').slick({
 let idx=1;
 mainSlider.on('afterChange', function(e,s,c){
     //console.log(c);
-    $('.num').css({backgroundPositionY:-500*idx});
+    //$('.num').css({backgroundPositionY:-500*idx});
+    $('.num').css({backgroundPositionY:-500*c-6000*idx});
     idx++;
 })
 
