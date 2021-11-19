@@ -1,5 +1,6 @@
 $(function(){
     
+    
     $('.main_slider').slick({
         arrows:false,
         autoplay:true,
@@ -55,6 +56,7 @@ $(function(){
                 slidesToShow: 1,
               }
             },
+
             {
                 breakpoint: 600,
                 settings: {
@@ -87,7 +89,4 @@ $(function(){
         $('.depth02').removeAttr('style')
     });
 
-    $(window).on('resize', function(){
-        if($(window).width()>768) $('nav').removeAttr("style")
-    });
 })
