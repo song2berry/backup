@@ -41,12 +41,12 @@ $(function(){
     });
 
 
-    
     $('.ev_slider').slick({
         arrows:false,
         slidesToScroll: 1,
         autoplay:true,
         slidesToShow: 2,
+        
         responsive: [
             {
               breakpoint: 769,
@@ -84,6 +84,13 @@ $(function(){
             $(this).parent().siblings().find('.depth02').slideUp();
         }
     });
+
+
+    $('button').on('click', function(){
+      $('.con04_box1').toggleClass('on');
+      $(this).toggleClass('on');
+    });
+
 
     $(window).on('resize', function(){
         $('.depth02').removeAttr('style')
