@@ -1,4 +1,4 @@
-body {background:#444;color:#f2f2f2;text-align:center;}
+body {background:#333;color:#f2f2f2;text-align:center;}
 
 .header h1 {position:fixed;top:30px;left:30px;z-index:1;}
 .header .right {position:fixed;top:30px;right:30px;z-index:1;}
@@ -20,22 +20,20 @@ body {background:#444;color:#f2f2f2;text-align:center;}
 .section p {transform:translateY(100px);opacity:0;}
 .section.on p {transform:translateY(0);opacity:1;transition:0.5s 0.5s;}
 
+.f02 {background:url(../lib/base/main_visual01.jpg) no-repeat fixed center center/cover}
+.f03 {background:url(../lib/base/mainV02.jpg) no-repeat fixed center center/cover}
+.f04 {background:url(../lib/base/mainV03.jpg) no-repeat fixed center center/cover}
 
-.f02 {background: url(../lib/base/main_visual01.jpg) no-repeat fixed center center/cover;}
-.f03 {background: url(../lib/base/mainV02.jpg) no-repeat fixed center center/cover;}
-.f04 {background: url(../lib/base/mainV03.jpg) no-repeat fixed center center/cover;}
 
-.copyright {background: #444; padding: 100px;}
+.copyright {background:#333;padding:100px 0;}
 
 .footer .right {position:fixed;bottom:30px;right:30px;z-index:1;}
-.footer .left {position:fixed;width: 100px; height: 200px; top:40%;left:0;z-index:1;}
-.footer .left::after {content: "";display: block; width:100%; height: 1px; background: #f00;
-position: absolute; bottom: 40px; left: 0;}
-.footer .left strong {display: block; position: absolute; bottom: 0; left: 20px;}
-.footer .left span {display: block; transform: rotate(-90deg); position: absolute; top: 50px; left: 0;}
+.footer .left {position:fixed;width:100px;height:200px;top:40%;left:0;z-index:1;}
+.footer .left:after {content:"";display:block;width:100%;height:1px;background:#f00;position:absolute;bottom:40px;left:0;}
 
-.umovie {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: #fff; z-index: -1;}
+.footer .left strong {display:block;position:absolute;bottom:0;left:20px;}
+.footer .left span {display:block;transform:rotate(-90deg);position:absolute;top:40px;left:0;}
 
-
+.umovie {position:fixed;top:0;left:0;width:100%;height:100vh;background:#fff;z-index:-1;}
 
 
