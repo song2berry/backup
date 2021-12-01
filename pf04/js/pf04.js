@@ -9,7 +9,25 @@ $(function(){
         speed:1000,
         
     });
-   
+    $('.bgVideo').YTPlayer({
+        videoURL:'https://youtu.be/7KMxNaXnuOM',
+        containment:'.content04',
+        autoPlay:true, 
+        mute:true, 
+        startAt:0, 
+        opacity:1,
+        showControls:false,
+    });
+
+    $('.content04 i.xi-pause').on('click', function(){
+        $('.bgVideo').YTPPause();
+    });
+    $('.content04 i.xi-play').on('click', function(){
+        $('#bgndVideo').YTPPlay();
+    });
+    $('.content04 i.xi-tv').on('click', function(){
+        $('.bgVideo').YTPFullscreen();
+    });
    
     $('.mopen').on('click', function(){
         $('.gnb').toggleClass('on');
