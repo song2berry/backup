@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
 :root {
     --mc:#817e71;
     --bc:#645f4f;
@@ -307,12 +308,35 @@ no-repeat center center/cover;}
 }
 
 
+.content05 {padding: 100px 0;}
+.content05 .container2 {display:flex;width:1500px;margin:0 auto;}
 
+.content05 figure {width:500px; height: 500px; margin-bottom: 20px;
+font-size: 60px; font-weight: 700; font-family:'Montserrat', sans-serif;}
+
+.content05 .c0501 figure {line-height: 8; color: #f2f2f2; background: #73bbc1;}
+.content05 .c0503 figure {padding-top: 200px; background: #b9d4d6; color: #3f5a5d;}
+.content05 h2 {font-size: 20px; font-weight: 500; margin-bottom: 10px;}
+.content05 p {font-size: 15px;}
+
+
+@media (max-width:768px){
+    .content05 {padding: 100px 0;}
+    .content05 .container2 {display:flex; flex-direction: column; width:auto;margin:0 auto;}
+    
+    .content05 figure {width:500px; height: 500px; margin-bottom: 10px;
+    font-size: 60px; font-weight: 700; font-family:'Montserrat', sans-serif;}
+    
+    .content05 .c0501 figure {line-height: 8; color: #f2f2f2; background: #73bbc1;}
+    .content05 .c0503 figure {padding-top: 200px; background: #b9d4d6; color: #3f5a5d;}
+    .content05 h2 {font-size: 20px; font-weight: 500; margin-bottom: 5px;}
+    .content05 p {font-size: 15px; margin-bottom: 30px;}
+}
 
 .footer .right {font-size: 40px; position:fixed;bottom:30px;right:30px;z-index:1;
 border-radius: 20%;background-color: var(--bc); color: var(--bbbc); padding: 0 6px; opacity: 0.6;}
 
-.footer {font-size: 14px; line-height: 1.5; padding: 40px;}
+.footer {background: #3f5a5d; color: var(--bbbc); font-size: 14px; line-height: 1.5; padding: 40px;}
 
 .footer .container1 {display: block; width: 1200px; margin: 0 auto;}
 
