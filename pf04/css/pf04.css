@@ -7,7 +7,7 @@
     --bbc:#865757; 
     --bbbc:#e2e0d8;
 }
-/*{outline: 1px solid #f00;}*/
+*{outline: 1px solid #f00;}
 body {background:var(--bbbc);color: var(--bc); text-align: center;font-family: 'Noto Serif KR', serif;}
 
 
@@ -40,7 +40,7 @@ top:73px;left:0;transition:0.5s;z-index:999;}
 
 @media (max-width:768px){
     html {font-size:10px;}
-    body {font-size:1.6rem;max-width: 100%;overflow-x: hidden; text-align: center;
+    body {font-size:1.6rem;max-width: 100%;text-align: center;
     font-family: 'Noto Serif KR', serif;}
     
     .container {display:flex; flex-direction: column; width:auto;margin:0 auto;}
@@ -293,7 +293,8 @@ border-right:1px solid var(--bc);position:absolute;bottom:-10px;right:150px;tran
 
 .content04 {position:relative;height:100vh;width: 100%; background:rgb(117, 117, 117)
 no-repeat center center/cover;}
-.content04 .container {display: block; margin:0 auto;color:var(--bc);padding:0 15px;text-align:center;font-size:14px;font-weight:100;line-height:2;}
+.content04 .container {display: block; margin:0 auto;color:var(--bc);padding:0 15px;text-align:center;
+font-size:14px;font-weight:100;line-height:2;}
 .content04 .container h2 {font-size: 27px; padding: 400px 0 0 0; margin-bottom:10px;}
 .content04 .container p {font-size: 17px; margin-bottom:20px;}
 .content04 i {font-size:20px;padding:10px;color: var(--bbbc); background:var(--mc);border-radius:5px;margin:0 5px;}
@@ -301,7 +302,8 @@ no-repeat center center/cover;}
 @media (max-width:768px){
     .content04 {position:relative;height:100vh; width: 100%; background:rgb(117, 117, 117)
     no-repeat center center/cover;}
-    .content04 .container {display: block; margin:0 auto;color:var(--bc);padding:0 15px;text-align:center;font-size:14px;font-weight:100;line-height:1;}
+    .content04 .container {display: block; margin:0 auto;color:var(--bc);padding:0 15px;text-align:center;
+    font-size:14px;font-weight:100;line-height:1;}
     .content04 .s04cont h2 {font-size: 20px; margin-bottom:10px;}
     .content04 .s04cont p {font-size: 15px; margin-bottom:25px;}
     .content04 i {font-size:15px;padding:8px;color: var(--bbbc); background:var(--mc);border-radius:5px;margin:0 5px;}
@@ -322,7 +324,7 @@ font-size: 60px; font-weight: 700; font-family:'Montserrat', sans-serif;}
 
 @media (max-width:768px){
     .content05 {padding: 100px 0;}
-    .content05 .container2 {display:flex; flex-direction: column; width:auto;margin:0 auto;}
+    .content05 .container2 {display:flex; flex-direction: column; width:100%;margin:0 auto;}
     
     .content05 figure {width:500px; height: 500px; margin-bottom: 10px;
     font-size: 60px; font-weight: 700; font-family:'Montserrat', sans-serif;}
