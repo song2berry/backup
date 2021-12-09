@@ -1,0 +1,22 @@
+
+.clearfix::after {content: ""; display: block; clear: both;}
+
+#float {width: 1200px; margin: 0 auto; background: #ececb3;}
+#float>div {float: left; width: 50%; padding: 100px; text-align: center; background: #ee9ea5;}
+#float>div:nth-child(1) {height: 50px;}
+
+/*clearfix*/
+#float::after {content: ""; display: block; clear: both;}
+
+#float2 {width: 1200px; margin: 0 auto; background: #ececb3;}
+#float2>div {float: left; width: 50%; padding: 100px; text-align: center; background: #ee9ea5;}
+#float2>div:nth-child(1) {height: 50px;}
+
+#float3 {width: 1200px; margin: 0 auto; background: #ececb3;}
+#float3>div {float: left; width: 50%; padding: 100px; text-align: center; background: #ee9ea5;}
+#float3>div:nth-child(1) {height: 50px;}
+
+
+#flex { display: flex; width: 1200px; margin: 0 auto; background:#ececb3; flex-wrap: wrap;}
+#flex>div {flex: none; width: 50%; padding: 100px; text-align: center; background: #ee9ea5;}
+#flex>div:nth-child(1) {height: 50px;}
