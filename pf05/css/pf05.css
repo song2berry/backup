@@ -626,16 +626,16 @@ font-size:20px; padding:10px;background:#ddd;border-radius:50%;z-index: 999;}
 
 .review .rv_slider {width: 1200px; margin: 0 auto; overflow: hidden;}
 .review .rv_cont {flex: 1; padding:0 15px;}
-.review .rv_cont figure {transition: 0.5s;}
+.review .rv_cont figure {width: 100%; transition: 0.5s;}
 .review .rv_cont figure img {max-width: 100%;}
 
 
-.review .rv_cont .rv01 {background: #f2f2f2; padding-bottom: 0.2rem;}
-.review .rv_cont .rv02 {background: #f2f2f2; padding-bottom: 0.2rem;}
-.review .rv_cont .rv03 {background: #f2f2f2; padding-bottom: 0.2rem;}
-.review .rv_cont .rv04 {background: #f2f2f2; padding-bottom: 0.2rem;}
-.review .rv_cont .rv05 {background: #f2f2f2; padding-bottom: 0.2rem;}
-.review .rv_cont .rv06 {background: #f2f2f2; padding-bottom: 0.2rem;}
+.review .rv_cont .rv01 {background: #f2f2f2;}
+.review .rv_cont .rv02 {background: #f2f2f2;}
+.review .rv_cont .rv03 {background: #f2f2f2;}
+.review .rv_cont .rv04 {background: #f2f2f2;}
+.review .rv_cont .rv05 {background: #f2f2f2;}
+.review .rv_cont .rv06 {background: #f2f2f2;}
 
 .rv_cont .rv_title {padding: 5px; margin:10px 15px 10px 10px;}
 .rv_cont .rv_title img {float: left; max-width: 17%; border-radius: 50%;  overflow: hidden;}
