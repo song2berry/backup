@@ -624,8 +624,9 @@ font-size:20px; padding:10px;background:#ddd;border-radius:50%;z-index: 999;}
 .review h2 {font-size: 30px; margin-bottom: 9px;font-family: 'Poppins', sans-serif, 'Noto Sans KR';}
 .review p {font-size: 15px; margin-bottom: 25px;font-family: 'Poppins', sans-serif, 'Noto Sans KR';}
 
-.review .rv_slider {width: 1200px; margin: 0 auto; overflow: hidden;}
-.review .rv_cont {flex: 1; padding:0 15px;}
+.review .container {width: 1200px;}
+.review .rv_slider {margin: 0 auto; display: flex; overflow: hidden;}
+.review .rv_cont {flex:1; padding:0 15px;}
 .review .rv_cont figure {width: 100%; transition: 0.5s;}
 .review .rv_cont figure img {max-width: 100%;}
 
@@ -650,9 +651,9 @@ color: #f2f2f2; background: var(--mmc); }
 
 
 @media (max-width:768px){
-    .review {padding: 70px 0;width: auto; height:100%;
+    .review {padding: 70px 0; min-width: 90%; height:auto;
     background:url(../img/s6back_re.jpg)no-repeat fixed center/cover; position: relative;}
-    .review .btn i {cursor: pointer; position:absolute;top:55%;left:50%;transform:translate(-50%,-50%);
+    .review .btn i {display:block; cursor: pointer; position:absolute;top:55%;left:50%;transform:translate(-50%,-50%);
     font-size:20px; padding:10px;background:#ddd;border-radius:50%;z-index: 999; opacity: 0.7;}
     .review .btn i.xi-angle-left {margin-left:-40%;}
     .review .btn i.xi-angle-right {margin-left:40%;}
@@ -661,15 +662,12 @@ color: #f2f2f2; background: var(--mmc); }
     .review h2 {font-size: 30px; margin-bottom: 9px;font-family: 'Poppins', sans-serif, 'Noto Sans KR';}
     .review p {font-size: 15px; margin-bottom: 25px;font-family: 'Poppins', sans-serif, 'Noto Sans KR';}
     
-    .review .rv_slider {width: 95%; margin: 0 auto;}
-    .review .rv_cont {flex: 1; padding: 0 17px;  overflow: hidden;}
-    .review .rv_cont figure {width: 100%; transition: none;}
+    .review .container {width: 90%;}
+    .review .rv_slider {margin: 0 auto; display: flex;}
+    .review .rv_cont {flex: 1; padding: 0;}
+    .review .rv_cont figure {width: auto; transition: none;}
     .review .rv_cont figure img {max-width: 100%;}
     
-    .review .rv_cont figure .go {display: none; position: absolute; background:var(--mc);
-    border-radius: 50%;top: 41%; left: 46%; color: #f2f2f2; font-size: 29px; padding: 5px;}
-    .review .rv_cont figure:hover .go {display: none;}
-    .review .rv_cont figure:hover img {filter: brightness(0.6);}
     
     .review .rv_cont .rv01 {background: #f2f2f2;}
     .review .rv_cont .rv02 {background: #f2f2f2;}
