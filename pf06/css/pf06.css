@@ -230,5 +230,54 @@ border: 1px solid #ddd; border-radius:40px 0 40px 0; overflow: hidden;}
 #location .box_text h3 {line-height: 1.3; margin-top: 30px; font-size: 18px;}
 #location .box_text p {line-height: 1.3; margin-top: 9px; font-size: 15px;font-weight: 300;}
 
-#ft {padding: 80px 0 100px 0; background: #42443f; color: #f2f2f2; text-align: center;
+
+
+@media (max-width:768px) {
+    #location {color: #444; padding: 70px 0;  text-align: center;}
+    #location .container {display: flex; flex-direction: column; width: 90%; margin: 0 auto; padding: 15px;}
+    #location .container .box {display: block; width: 100%;}
+    #location .container .box h2 img {margin-bottom: 20px; width: auto; max-width: 100%;}
+    #location .container .box p { margin-bottom: 20px; font-size: 17px; font-weight: 300; line-height: 1.3;}
+    #location .container .box_list {margin-bottom: 30px;}
+    #location .container .box ul>li {display: inline-flex; font-size: 17px; padding: 5px 5px; cursor: pointer;}
+    #location .container .box ul>li span{text-align: center; font-size: 17px;
+    border: 1px solid #ddd; width:115px; padding:10px 5px;}
+    #location .container .box ul>li span:hover {background: #595d4f; color: #f2f2f2; transform: scale(1.15);}
+    #location .container .more {text-align: center; width: 50%; border: 1px solid #595d4f; background: #4b5338; color: #f2f2f2;
+    padding: 20px; margin-left: 23%; border-radius: 40px;}
+    
+    #location .container .box1 {display: none; margin-top: 30px; margin-left: 20px; width: 100%;
+    border: 1px solid #ddd; border-radius:40px 0 40px 0; overflow: hidden;}
+    #location .box1 figure {display: flex; flex-direction: column;}
+    #location .box1 figure img {width: 54%; max-width: 100%;}
+    #location .box_text {padding: 60px 20px 20px 20px;}
+    #location .box_text strong {line-height: 1.5; font-size: 23px; font-weight: 560; color: #4b5338;}
+    #location .box_text span {text-align: right; font-size: 16px; font-weight: 300; color: #7d8078;}
+    #location .box_text h3 {line-height: 1.3; margin-top: 30px; font-size: 18px;}
+    #location .box_text p {line-height: 1.3; margin-top: 9px; font-size: 15px;font-weight: 300;}
+}
+
+
+
+
+#ft {padding: 50px 0 60px 0; background: #42443f; color: #f2f2f2; text-align: center;
 border-top: 1px solid #ddd;}
+#ft address {margin-top: 30px;}
+#ft span {padding: 0 20px; line-height: 3; position: relative;}
+#ft span~span::after {content:""; width:2px; height:12px; display: block;
+background: #9c9b94; position: absolute; top: 50%; left:0; transform: translateY(-40%);}
+
+#ft .copyr {line-height: 3; font-size: 14px; font-weight: 300; color: #9c9b94;}
+
+
+
+@media (max-width:768px) {
+    #ft {display:flex; flex-direction:column; padding: 50px 0 60px 0;background: #42443f;
+    color: #f2f2f2; text-align: center;border-top: 1px solid #ddd;}
+    #ft address {margin-top: 30px;}
+    #ft span {padding: 0 8px; line-height: 2.5; position: relative;}
+    #ft span~span::after {content:""; width:2px; height:12px; display: none;
+    background: #9c9b94; position: absolute; top: 50%; left:0; transform: translateY(-40%);}
+    
+    #ft .copyr {line-height: 1.5; margin-top: 10px; font-size: 14px; font-weight: 300; color: #9c9b94;}
+}
