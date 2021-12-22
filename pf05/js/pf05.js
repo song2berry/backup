@@ -200,5 +200,13 @@ $(function(){
         $('.depth02').removeAttr('style')
     });
 
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 200)	{
+        topBt.fadeIn();	
+      } else {
+        topBt.fadeOut()
+      }
+    });
+  
     
     })
