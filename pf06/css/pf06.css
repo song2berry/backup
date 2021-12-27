@@ -78,7 +78,7 @@ position:absolute;top:41px;left:-10%;z-index:999;}
 #main_visual {color:#42443f; position: relative;}
 #main_visual .mv01 {background: url(../img/visual_20200825090600_5.jpg) no-repeat center center/cover;
 text-align: center;height: 720px;}
-#main_visual .mv01text {padding: 100px 0;}
+#main_visual .mv01text {padding: 140px 0;}
 #main_visual .mv01text h2 {font-size: 35px; font-weight: 700; margin-bottom: 9px;}
 #main_visual .mv01text P {font-size: 17px; font-weight: 300;}
 
