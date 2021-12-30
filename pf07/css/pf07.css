@@ -16,11 +16,11 @@ background: var(--dc); opacity: 0.8;}
 #header h1>a {display: block; font-size: 0; height: 4rem; width: 12rem;
 background: url(../img/logo1copy.png)no-repeat left center;}
 
-.gnb {font-size: 19px; margin:0 auto;}
-.gnb>ul {display: flex; margin: 0 auto; width: 50rem; position: relative;}
+.gnb {font-size: 0.8rem; margin:0 auto;}
+.gnb>ul {display: flex; width: 100%; position: relative;}
 .gnb>ul>li {position: relative; display: block; line-height:2rem; text-align: center;
 flex: 1; padding: 1rem 0;}
-.gnb>ul>li>a {display: block; padding:0 0.8rem; position: relative;}
+.gnb>ul>li>a {display: block; padding:0 1rem; position: relative;}
 .gnb>ul>li>a::after {content: ""; display: block; width: 100%; height: 4px;
 background: var(--bc); position: absolute; bottom: -2px;left: 50%;transform: translateX(-50%);
 transition: 0.4s; opacity: 0;}
