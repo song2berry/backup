@@ -1,9 +1,23 @@
 $(function(){
     //------------------------------------------------------
+    $('#popUp').draggable();
+    
+    $('#popUp a').on('click', function(){
+        $(this).parent().fadeOut();
+        return false;
+    });
+    
+    $('.search').on('click', function(){
+        $('.searchForm').stop().slideToggle();
+    })
+    
     $(window).on('scroll', ()=>{
         let sct=$(window).scrollTop();
+        console.log(sTop,sct);
         sct > 0 ? $('#header').addClass('on') : $('#header').removeClass('on');
         //if(sct > 0) {$('#header').addClass('on')}else{$('#header').removeClass('on')}
+        sct > 300 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
+        sct > sTop ? $('#Solution').addClass('on') : $('#Solution').removeClass('on');
     });
     
     
@@ -25,6 +39,7 @@ $(function(){
         slidesToShow:3,
         pauseOnHover:false,
         pauseOnFocus:false,
+        //dots:true,
         centerPadding:"2rem",
     });
     
@@ -42,5 +57,25 @@ $(function(){
     });
     
     
+    $('.familyLink .link>a').on('click', function(){
+        //e.preventDefault();
+        $(this).prev().stop().slideToggle();
+        $(this).find('i').toggleClass('on');
+        return false;
+    });
+    
+    // $(document).not('.familyLink .link>a').on('click', function(){
+    //     $('.familyLink .link>a').prev().stop().slideUp();
+    // });
+    
+    $('#toTop a').on('click', e=> {
+        e.preventDefault();
+        $('html,body').animate({scrollTop:0},1000)
+    });
+    
+    let sTop = $('#Solution').offset().top - 200;
+    
+    //console.log(sTop)
+
     //------------------------------------------------------
     });
