@@ -4,36 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 001</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/fullpage.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/fullpage.min.js"></script>
-    <script src="./js/main.js"></script>
+    <title>SongE's Portfolio 2022</title>
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/slick.css">
+    <link rel="stylesheet" href="./lib/css/fullpage.css">
+    <link rel="stylesheet" href="./portfolio.css">
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/slick.min.js"></script>
+    <script src="./lib/js/fullpage.min.js"></script>
+    <script src="./lib/js/typed_cdn.js"></script>
+    <script src="./lib/js/circle-progress.min.js"></script>
+    <script src="./portfolio.js"></script>
 </head>
 <body>
+<div class="wrap">
     <header id="header">
-        <h1>Kwon Song E</h1>
-    </header>
-    <main id="song">
-        <div class="section sc01">
-            <div class="container">
-                <h2>SongE's Portfolio 2022</h2>
-                <figure>
-                    <img src="./img/se11.png" alt="me">
-                </figure>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    Nisi impedit laboriosam accusantium, quis in aperiam modi.
-                </p>
-            </div>
+        <h1>
+            <a href="#intro">SongE's Portfolio 2022</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#intro"></a></li>
+                <li><a href="#Portfolio_01">01</a></li>
+                <li><a href="#Portfolio_02">02</a></li>
+                <li><a href="#Portfolio_03">03</a></li>
+                <li><a href="#Portfolio_04">04</a></li>
+                <li><a href="#Portfolio_05">05</a></li>
+                <li><a href="#Profile">profile</a></li>
+            </ul>
+        </nav>
+        <div class="cover_btn">
+            <i class="xi-bars"></i>
         </div>
-        <div class="section sc02">02</div>
-        <div class="section sc03">03</div>
-        <div class="section sc04">04</div>
-        <div class="section sc05">05</div>
+    </header>
+    <main id="main">
+        <section class="section intro">
+            <div class="container">
+                <div class="slogan">
+                    <h2><span class="slogan_txt"></span></h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Esse itaque culpa optio voluptates fuga ipsam pariatur quaerat? Nemo?</p>
+                    <strong>SongE's portfolio 2022</strong>
+                </div>
+                <figure>
+                    <img src="../lib/base/painting-gffa4c7106_700.jpg" alt="SongE's portfolio 2022">
+                </figure>
+            </div>
+        </section>        
+        <section class="section Portfolio_01">01</section>
+        <section class="section Portfolio_02">02</section>
+        <section class="section Portfolio_03">03</section>
+        <section class="section Portfolio_04">04</section>
+        <section class="section Portfolio_05">05</section>
+        <section class="section Profile">Profile</section>
     </main>
+    <footer id="footer">
+        <div class="toTop">
+            <a href="#intro"><i class="xi-arrow-top"></i></a>
+        </div>
+        <address>
+            &copy; 2022 
+        </address>
+    </footer>
+</div>
 </body>
 </html>
