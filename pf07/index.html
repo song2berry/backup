@@ -34,10 +34,10 @@
         <h1>
             <a href="index.html"></a>
         </h1>
-        <nav class="gnb">
-            <ul>
+        <nav>
+            <ul class="depth01">
                 <li><a href="#!">학교안내</a>
-                    <ul class="submenu">
+                    <ul class="depth02">
                         <li><a href="#!">송산 학원</a></li>
                         <li><a href="#!">학교장 인사말</a></li>
                         <li><a href="#!">학교상징</a></li>
@@ -50,7 +50,7 @@
                     </ul>
                 </li>
                 <li><a href="#!">학과소개</a>
-                    <ul class="submenu">
+                    <ul class="depth02">
                         <li><a href="#!">패션액세서리디자인과</a></li>
                         <li><a href="#!">3D건축인테리어과</a></li>
                         <li><a href="#!">시각디자인과</a></li>
@@ -61,7 +61,7 @@
                     </ul>
                 </li>
                 <li><a href="#!">입학안내</a>
-                    <ul class="submenu">
+                    <ul class="depth02">
                         <li><a href="#!">모집요강</a></li>
                         <li><a href="#!">중3 대상프로그램</a></li>
                         <li><a href="#!">홍보자료</a></li>
@@ -70,8 +70,7 @@
                     </ul>
                 </li>
                 <li><a href="#!">취업정보</a>
-                    <ul class="submenu">
-                        <li><a href="#!">취업정보</a></li>
+                    <ul class="depth02">
                         <li><a href="#!">취업현황</a></li>
                         <li><a href="#!">MOU현황</a></li>
                         <li><a href="#!">진학정보</a></li>
@@ -80,7 +79,7 @@
                     </ul>
                 </li>
                 <li><a href="#!">학교소식</a>
-                    <ul class="submenu">
+                    <ul class="depth02">
                         <li><a href="#!">서디고NEWS</a></li>
                         <li><a href="#!">언론에 비친 서디고</a></li>
                         <li><a href="#!">사진앨범</a></li>
@@ -89,7 +88,7 @@
                     </ul>
                 </li>
                 <li><a href="#!">학교공지</a>
-                    <ul class="submenu">
+                    <ul class="depth02">
                         <li><a href="#!">공지사항</a></li>
                         <li><a href="#!">가정통신문</a></li>
                         <li><a href="#!">보건실</a></li>
@@ -101,16 +100,8 @@
                 </li>
             </ul>
         </nav>
-        <div class="hdRight">
-            <ul class="login">
-                <li><a href="#!"><i class="xi-user"></i>로그인</a></li>
-                <li><a href="#!"><i class="xi-user-plus-o"></i>회원가입</a></li>
-            </ul> 
-        </div>
         <div class="mopen">
             <span>모바일메뉴열기</span>
-            <span>모바일메뉴열기1</span>
-            <span>모바일메뉴열기2</span>
         </div>
     </header>
     <main>
@@ -128,7 +119,7 @@
                 <figure class="itm02">
                     <div class="slogan">
                         <h3>Moto</h3>
-                        <p>서울디자인고등학교는 "산에는 나무, 인간에게는 교육" 이라는<br>
+                        <p>"산에는 나무, 인간에게는 교육" 이라는
                         모토아래서 교육을 해오고 있습니다. </p>
                         <a href="#!">자세히 보기 <i class="xi-plus"></i></a>
                     </div>
@@ -148,7 +139,7 @@
                 <div class="right">
                     <h3>카테고리 검색</h3>
                     <form id="search" action="">
-                        <input type="search" placeholder="검색어를 입력하세요." size="50">
+                        <input type="search" placeholder="검색어를 입력하세요." size="50"onfocus="this.placeholder=''"onblur="this.placeholder='검색어를 입력하세요.'">
                         <button><i class="xi-search"></i></button>
                     </form>
                 </div>
@@ -194,54 +185,56 @@
             </div>
         </section>
         <section id="Festival">
-            <h2>DESIGN AWARD</h2>
-            <p>서울디자인고등학교의 각종 수상소식을 알려드립니다.</p>
-            <div class="container pr_slider">
-                <figure>
-                    <div class="case itm01">
-                        <div class="txt">
-                            <h3>architecture</h3>
-                            <strong>2022년 제46회 중국 상하이 국제기능올림픽대회 국가대표 선발</strong>
-                            <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
+            <div class="container">
+                <h2>DESIGN AWARD</h2>
+                <p>서울디자인고등학교의 각종 수상소식을 알려드립니다.</p>
+                <div class="pr_slider">
+                    <figure>
+                        <div class="case itm01">
+                            <div class="txt">
+                                <h3>Fashion Design</h3>
+                                <strong>2021 패션디자인과 제10회 고교패션컬렉션 참가 및 수상</strong>
+                                <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
                             </div>
-                    </div>
-                </figure>
-                <figure>
-                    <div class="case itm02">
-                        <div class="txt">
-                            <h3>Fashion Design</h3>
-                            <strong>2021 패션디자인과 제10회 고교패션컬렉션 참가 및 수상</strong>
-                            <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="case itm02">
+                            <div class="txt">
+                                <h3>SoundMusic Design</h3>
+                                <strong>2021 사운드뮤직디자인과 제3회 정기공연</strong>
+                                <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
                             </div>
-                    </div>
-                </figure>
-                <figure>
-                    <div class="case itm03">
-                        <div class="txt">
-                            <h3>SoundMusicDesign</h3>
-                            <strong>2021 사운드뮤직디자인과 제3회 정기공연</strong>
-                            <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="case itm03">
+                            <div class="txt">
+                                <h3>architecture</h3>
+                                <strong>2022년 제46회 중국 상하이 국제기능올림픽대회 국가대표 선발</strong>
+                                <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
                             </div>
-                    </div>
-                </figure>
-                <figure>
-                    <div class="case itm04">
-                        <div class="txt">
-                            <h3>Food Design</h3>
-                            <strong>태국방콕완디요리대회</strong>
-                            <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="case itm04">
+                            <div class="txt">
+                                <h3>Food Design</h3>
+                                <strong>태국방콕완디요리대회</strong>
+                                <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
                             </div>
-                    </div>
-                </figure>
-                <figure>
-                    <div class="case itm05">
-                        <div class="txt">
-                            <h3>Fashion Design</h3>
-                            <strong>2021 패션디자인과 제10회 고교패션컬렉션 참가 및 수상</strong>
-                            <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="case itm05">
+                            <div class="txt">
+                                <h3>Fashion Design</h3>
+                                <strong>2021 패션디자인과 제10회 고교패션컬렉션 참가 및 수상</strong>
+                                <a href="#!"><span>자세히보기</span> <i class="xi-arrow-right"></i></a>
                             </div>
-                    </div>
-                </figure>
+                        </div>
+                    </figure>
+                </div>
             </div>
         </section>
         <section id="News">
@@ -254,13 +247,12 @@
             </div>
             <div class="News_wrap">
                 <div class="view_school">
-                    <a href="#!">
-                        <img src="./img/s3_right.jpg" alt="">
-                    </a>
                     <div class="title">
+                        <a href="#!">
                         <h3>학교구경하기</h3>
                         <p>교내 전체를 둘러보세요.</p>
-                        <a href="#!"><i class="xi-touch"></i></a>
+                        <a href="#!"><i class="xi-zoom-in"></i></a>
+                        </a>
                     </div>
                 </div>
                 <div class="notice">
@@ -329,12 +321,13 @@
                 </figure>
             </div>
         </section>    
-        <footer id="footer" class="footer">
+        <footer id="footer">
             <div class="top">
                 <ul>
                     <li><a href="#!">개인정보처리방침</a></li>
                     <li><a href="#!"> 이용약관</a></li>
-                    <li><a href="#!"> 이메일무단수집거부</a></li>
+                    <li><a href="#!"> 저작권보호정책</a></li>
+                    <li><a href="#!"> 찾아오시는길</a></li>
                 </ul>
                 <div class="familyLink">
                     <div class="link">
@@ -351,14 +344,20 @@
             <hr>
             <div class="bottom">
                 <div class="footerLogo">
-                    <img src="./img/logo_footer.jpg" alt="">
+                    <img src="./img/logo2.png" alt="">
                 </div>
-                <address>
-                    서울특별시 종로구 종로33길 31 TEL : 02-740-7755 FAX : 02-740-7700
+                <div class="address">
+                    [04140]서울 마포구 백범로 139 (염리동, 동도중,서울디자인고등학교)<br>
+                    [대표전화] 02-715-2261 / [팩스] 교무실: 02-715-3953 / 행정실: 02-716-6967
                     <strong>COPYRIGHT &copy; SAMYANG CORPORATION. ALL RIGHTS RESERVED.</strong>
-                </address>
+                </div>
             </div>
         </footer>
+        <div id="toTop">
+            <a href="#">
+                <i class="xi-arrow-top"></i>
+            </a>            
+        </div>
     </main>
 </div>
 

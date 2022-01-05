@@ -11,21 +11,22 @@ $(function(){
         sct > sTop ? $('#Solution').addClass('on') : $('#Solution').removeClass('on');
     });
 
-    $('.mopen').on('click', function(){
-        $('.gnb').toggleClass('on');
-        $(this).toggleClass('on');
-    });
-
-    $('.gnb>ul>li>a').on('click', function(){
-        if($(window).width() < 769) {
-            $(this).next().slideToggle();
-            $(this).parent().siblings().find('.submenu').slideUp();
+    $('#header nav .depth01>li').on('click', function(){
+        if($('nav').hasClass('on')) {
+            $('.depth02').stop().slideUp();
+            $(this).find('.depth02').stop().slideToggle();
         }
     });
 
     $(window).on('resize', function(){
-        $('.submenu').removeAttr('style')
+        $('.depth02').removeAttr('style');
+        $('nav').removeClass('on');
     });
+
+    $('.mopen').on('click', function(){
+        $(this).toggleClass('on');
+        $('nav').toggleClass('on');
+    })
     
     $('.main_slider').slick({
         autoplay:true,
