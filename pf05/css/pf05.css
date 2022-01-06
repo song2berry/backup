@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
-    --mc:#59c3b6;
-    --mmc: #1b2d3d;
-    --bc:#52887f;
-    --bc1:#475d70;
-    --bc2:#33808d;
+    --mc:#457379;
+    --mmc: #2c4042;
+    --bc:#78979b;
+    --bc1:#5f7d81;
+    --bc2:#6d868a;
 
 
 }
@@ -90,28 +90,28 @@ color: #f2f2f2;}
     .header .gnb .depth01>li>a {display: block;}
     
     .header .gnb>.depth01>li .depth02 {display: none; opacity: 1; position: static; top: 0; left: 0; width: auto;
-    text-align: center;line-height:auto; background:var(--bc2);border:1px solid #ddd;
+    text-align: center;line-height:auto; background:var(--bc2);border:none;
     visibility: visible;text-align: left;z-index: 999;}
     
     .header .gnb>.depth01 .depth02 li {padding: 0 0 0 15px; }
     .header .gnb>.depth01 .depth02 li~li {border-top: 1px solid #ddd;}
     .header .gnb>.depth01 .depth02::before {content: ""; display: none; width: auto; height: auto; background:#fff;
-    border: 1px solid #ddd; position: absolute; top: -7px; left: 30px;transform: rotate(45deg);}
+    border:none; position: absolute; top: -7px; left: 30px;transform: rotate(45deg);}
     .header .gnb>.depth01 .depth02 li {position: absolute; color: #dadada; }
     .header .gnb>.depth01 .depth01>li:hover .depth02 {opacity: 1; top: 70px;  transition: none;}
     
-    .header .gnb>.depth01 .depth02 {border-radius: 20px; box-shadow: none;}
+    .header .gnb>.depth01 .depth02 {border:none; box-shadow: none;}
     .header .gnb>.depth01 .depth02::before {content: ""; display: none; width: auto; height: auto; background:transparent;
-    border: 4px solid var(--bc); position: static; top: -100px; left: 30px;transform: rotate(45deg); border-radius: 50%;}
+    border: none; position: static; top: -100px; left: 30px;transform: rotate(45deg);}
     .header .gnb>.depth01 .depth02>li {position: static; background:transparent;}
     .header .gnb>.depth01 .depth02>li:hover {background: var(--mc); color: #fff;}
-    .header .gnb>.depth01 .depth02>li:first-child {border-radius: 20px 20px 0 0;}
-    .header .gnb>.depth01 .depth02>li:last-child {border-radius: 0 0 20px 20px;}
+    .header .gnb>.depth01 .depth02>li:first-child {border-radius: 0;}
+    .header .gnb>.depth01 .depth02>li:last-child {border-radius: 0;}
     
     .header_top {padding: 10px 0; background: var(--bc2);}
     .header_top a {padding:0 6px;}
-    .header_top i {font-size: 29px; padding: 7px; border-radius: 50%; background: var(--mc); color: #fff;}
-    .header_top i:hover{display: none; font-size: 20px; border-radius: 50%;
+    .header_top i {font-size: 29px; padding: 7px; border:none; background: var(--mc); color: #fff;}
+    .header_top i:hover{display: none; font-size: 20px;border:none;
     background: var(--mc); color: #fff;transform: scale(1.2); transition: none;}
     
     .header_bottom {padding: 5px; background: var(--bc2);}
@@ -688,10 +688,10 @@ color: #f2f2f2; background: var(--mmc); }
 }
 
 
-.footer .right {position:fixed;bottom:30px;right:30px;z-index:1;
+.footer .toTop {position:fixed;bottom:30px;right:30px;z-index:1;
 border-radius: 5px;background-color: var(--bc); color:#f2f2f2; padding: 5px 10px; opacity: 0.6;}
-.footer .right .xi-arrow-top {font-size: 30px;}
-.footer .right span{font-size: 16px;}
+.footer .toTop .xi-arrow-top {font-size: 30px;}
+.footer .toTop span{font-size: 16px;}
     
 .footer {text-align: left; background:#27425c; color: var(--bbbc); font-size: 14px;
 line-height: 1.5; padding: 40px;}
@@ -725,10 +725,10 @@ background: #9c9b94; position: absolute; top: 50%; left:0; transform: translateY
 
 
 @media (max-width:768px){
-    .footer .right {position:fixed;bottom:10px;right:10px;z-index:1;
+    .footer .toTop {position:fixed;bottom:10px;right:10px;z-index:1;
     border-radius: 5px;background-color: var(--bc); color:#f2f2f2; padding: 5px 7px; opacity: 0.6;}
-    .footer .right .xi-arrow-top {font-size: 23px;}
-    .footer .right span{font-size: 13px;}
+    .footer .toTop .xi-arrow-top {font-size: 23px;}
+    .footer .toTop span{font-size: 13px;}
         
     .footer {text-align: center; background:#27425c; color: var(--bbbc); font-size: 14px;
     line-height: 1.3; padding: 30px 0;}
