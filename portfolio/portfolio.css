@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
 :root {
-    --mc:#9271a8;
-    --sc:#5d99a8;
-    --lc:#e9e1ee;
-    --dc:#6d6572;
+    --mc:#FAAE67;
+    --sc:#D65490;
+    --lc:#f7f7f7;
+    --dc:#444444;
+    --gc:#dddddd;
 }
-
-
 
 html {font-size:20px;}
 body {font-size:0.8rem;color:var(--dc);}
@@ -18,28 +19,47 @@ body {font-size:0.8rem;color:var(--dc);}
 #header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
 
 #header nav li a {position:relative;display:block;width:3rem;height:1rem;text-indent:-99999px;}
-#header nav li a:after {content:"";position:absolute;top:0.35rem;right:0;display:block;width:40%;height:0.3rem;
-background:var(--dc);border-radius:0.15rem;transition:0.3s;}
+#header nav li a:after {content:"";position:absolute;top:0.35rem;right:0;display:block;
+width:40%;height:0.3rem;background:var(--dc);border-radius:0.15rem;transition:0.3s;}
 #header nav li.on a:after {width:70%;}
 
 
 
-.section {}
-.container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;align-items:center;
-width:70rem;margin:0 auto;}
+/* {outline: 1px solid #f00;}*/
+.section {background:url()}
+.section img {max-width:100%;}
+.section .mockup {background:url(./lib/base/mockupmac.png) no-repeat center top/100%;padding:6.5% 9% 55% 8%;}
+.container {position:relative;display:grid;grid-template-columns:repeat(2,4fr);gap:5rem;
+align-items:center;width:70rem;margin:0 auto;}
+.section .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
+.section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:2s;}
+.section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
 
-.intro {background: url(../lib/base/pineapple-ge2c901c5a_1920.jpg)no-repeat bottom;}
-.intro figure {position:relative;border-radius:35% 65% 60% 40% / 47% 30% 70% 53%;overflow:hidden;
-animation:int_movie 4s infinite linear}
-.intro .container::after {content:"";position:absolute;top:3rem;right:3rem;display:block;width:5rem;
-height:5rem;background:var(--sc);border-radius:50%;opacity:0.7;}
+.section .desc h3 {font-family: 'Montserrat', sans-serif;font-size:2.5rem;font-weight:200;margin-bottom:1rem;}
+.section .desc p {font-size:0.8rem;font-weight:300;margin-bottom:2rem;}
+.section .desc dl {display:inline-flex;line-height:1.5rem;border-bottom:1px solid var(--gc);}
+.section .desc dl dt {width:6rem;}
+.section .desc dl dt:before {content:"📌";margin-right:0.5rem}
+.section .desc dl:last-of-type {margin-bottom:2rem;}
+.section .desc dd span {display:inline-block;width:0.6rem;height:0.6rem;border-radius:50%;vertical-align:middle;}
+.section .desc dd strong {vertical-align:middle;margin-right:1rem;}
+.section .desc dd span:nth-of-type(1) {background:#333333;}
+.section .desc dd span:nth-of-type(2) {background:#666666;}
+.section .desc dd span:nth-of-type(3) {background:#999999;}
+
+.section .desc ul {display:flex;gap:0.5rem;}
+.section .desc ul a {display:block;background:var(--mc);color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:100;border-radius:0.3rem;}
+
+
+.intro figure {position:relative;border-radius:35% 65% 60% 40% / 47% 30% 70% 53%;overflow:hidden;animation:int_movie 4s infinite linear}
+.intro .container::after {content:"";position:absolute;top:3rem;right:3rem;display:block;width:5rem;height:5rem;background:var(--sc);border-radius:50%;opacity:0.7;}
  
-.intro figure:hover {border-radius:56% 44% 76% 24% / 25% 41% 59% 75%}
+.intro figure:hover {border-radius:56% 44% 76% 55% / 25% 41% 59% 75%}
 .intro figure img {width:100%;}
 
 @keyframes int_movie {
     0% {border-radius:35% 65% 60% 40% / 47% 30% 70% 53%;}
-    50% {border-radius:24% 60% 40% 60% / 25% 77% 23% 55% }
+    50% {border-radius:24% 76% 2% 22% / 25% 77% 23% 75% }
     100% {border-radius:35% 65% 60% 40% / 47% 30% 70% 53%;}
 }
 
@@ -47,8 +67,19 @@ height:5rem;background:var(--sc);border-radius:50%;opacity:0.7;}
 .intro .slogan p {font-size:0.75rem;font-weight:300;margin-bottom:1rem;}
 .intro .slogan strong {display:block;font-size:1rem;font-weight:500;}
 
+.intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid #444;font-size:0;border-radius:0.7rem;opacity:0.5;}
+.intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:#444;border-radius:0.1rem;animation:wheel 0.5s infinite}
+
+@keyframes wheel {
+    to {top:0.6rem}
+}
+
+.portfolio_01 {}
+
 
 
 #footer .toTop {position:fixed;bottom:3rem;right:3rem;z-index:999;}
 #footer .toTop i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
 #footer address {position:fixed;bottom:3rem;left:3rem;z-index:999;}
+
+
