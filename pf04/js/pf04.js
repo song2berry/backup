@@ -1,4 +1,11 @@
 $(function(){
+    $(window).on('scroll', ()=>{
+        let sct=$(window).scrollTop();
+        console.log(sTop,sct);
+        sct > 300 ? $('.toTop').fadeIn() : $('.toTop').fadeOut();
+        sct > sTop ? $('.content01').addClass('on') : $('.content01').removeClass('on');
+    });
+
     $('.main_slider').slick({
         arrows:false,
         autoplay:true,
@@ -40,6 +47,14 @@ $(function(){
         }
     });
 
+    $('.toTop a').on('click', e=> {
+        e.preventDefault();
+        $('html,body').animate({scrollTop:0},1000)
+    });
+
+    let sTop = $('.content01').offset().top - 200;
+    
+    
 
     $('button').on('click', function(){
       $('.con04_box1').toggleClass('on');
