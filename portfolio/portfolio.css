@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
 
 :root {
-    --mc:#FAAE67;
+    --mc:#7b5888;
     --sc:#D65490;
-    --lc:#f7f7f7;
-    --dc:#444444;
+    --lc:#e5dee7;
+    --dc:#59515a;
     --gc:#dddddd;
 }
 
@@ -18,37 +18,14 @@ body {font-size:0.8rem;color:var(--dc);}
 #header .cover_btn {position:fixed;top:3rem;right:3rem;z-index:999;}
 #header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
 
-#header nav li a {position:relative;display:block;width:3rem;height:1rem;text-indent:-99999px;}
+#header nav li a {position:relative;display:block;width:2rem;height:1.5rem;
+text-indent:-99999px;}
 #header nav li a:after {content:"";position:absolute;top:0.35rem;right:0;display:block;
-width:40%;height:0.3rem;background:var(--dc);border-radius:0.15rem;transition:0.3s;}
-#header nav li.on a:after {width:70%;}
+width:40%;height:0.7rem;background:var(--mc);transition:0.3s;}
+#header nav li.on a:after {height:50%;border-radius:50%;}
 
 
 
-/* {outline: 1px solid #f00;}*/
-.section {background:url()}
-.section img {max-width:100%;}
-.section .mockup {background:url(./lib/base/mockupmac.png) no-repeat center top/100%;padding:6.5% 9% 55% 8%;}
-.container {position:relative;display:grid;grid-template-columns:repeat(2,4fr);gap:5rem;
-align-items:center;width:70rem;margin:0 auto;}
-.section .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
-.section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:2s;}
-.section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
-
-.section .desc h3 {font-family: 'Montserrat', sans-serif;font-size:2.5rem;font-weight:200;margin-bottom:1rem;}
-.section .desc p {font-size:0.8rem;font-weight:300;margin-bottom:2rem;}
-.section .desc dl {display:inline-flex;line-height:1.5rem;border-bottom:1px solid var(--gc);}
-.section .desc dl dt {width:6rem;}
-.section .desc dl dt:before {content:"📌";margin-right:0.5rem}
-.section .desc dl:last-of-type {margin-bottom:2rem;}
-.section .desc dd span {display:inline-block;width:0.6rem;height:0.6rem;border-radius:50%;vertical-align:middle;}
-.section .desc dd strong {vertical-align:middle;margin-right:1rem;}
-.section .desc dd span:nth-of-type(1) {background:#333333;}
-.section .desc dd span:nth-of-type(2) {background:#666666;}
-.section .desc dd span:nth-of-type(3) {background:#999999;}
-
-.section .desc ul {display:flex;gap:0.5rem;}
-.section .desc ul a {display:block;background:var(--mc);color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:100;border-radius:0.3rem;}
 
 
 .intro figure {position:relative;border-radius:35% 65% 60% 40% / 47% 30% 70% 53%;overflow:hidden;animation:int_movie 4s infinite linear}
@@ -74,7 +51,34 @@ align-items:center;width:70rem;margin:0 auto;}
     to {top:0.6rem}
 }
 
-.portfolio_01 {}
+/* {outline: 1px solid #f00;}*/
+.section {background:url()}
+.section img {max-width:100%;}
+.section .mockup {background:url(./lib/base/mockupmac.png) no-repeat center bottom/100%;padding:16% 9.8% 30% 9%;}
+.container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:7rem;
+align-items:center;width:70rem;margin:0 auto;}
+.section .mockup figure {position:relative; padding-bottom:57%;overflow:hidden;}
+.section .mockup figure img {position:absolute;top:0;left:0;width:100%; transition:2s;}
+.section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
+
+.section .desc h3 {font-family: 'Montserrat', sans-serif;font-size:2.5rem;font-weight:200;margin-bottom:1rem;}
+.section .desc p {font-size:0.9rem;font-weight:300;margin-bottom:2rem;}
+.section .desc dl {display:inline-flex;line-height:1.9rem;border-bottom:1px solid var(--gc);}
+.section .desc dl dt {width:6rem; font-size: 0.9rem;}
+.section .desc dl dt:before {content:"📌";margin-right:0.5rem}
+.section .desc dl:last-of-type {margin-bottom:2rem;}
+.section .desc dd span {display:inline-block;width:1.3rem;height:1.3rem;border-radius:50%;vertical-align:middle;}
+.section .desc dd strong {font-size:0.9rem; vertical-align:middle;margin-right:1rem;}
+.section .desc dd span:nth-of-type(1) {background:#817e71;}
+.section .desc dd span:nth-of-type(2) {background:#645f4f;}
+.section .desc dd span:nth-of-type(3) {background:#865757;}
+.section .desc dd span:nth-of-type(4) {background:#e2e0d8;}
+
+.section .desc ul {display:flex;gap:0.5rem;}
+.section .desc ul a {display:block;background:var(--mc);color:var(--lc);line-height:3rem;padding:0 2rem;font-size:1rem;font-weight:100;border-radius:0.3rem;}
+
+
+
 
 
 
