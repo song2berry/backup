@@ -41,7 +41,6 @@ hr.mhr:after {content:"\e905";font-family:xeicon;background:#fff;padding:0.5rem;
 .con02 .brand_name li.on:after {width:100%;}
 
 
-.con02 .brand_wrap {}
 .con02 .brand_wrap>div {float:left;}
 .con02 .brand_wrap .itm01 {background:#999;height:25rem;width:40rem;}
 .con02 .brand_wrap .itm02 {background:#888;height:12.5rem;width:40rem;}
