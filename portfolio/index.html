@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SongE's Portfolio 2022</title>
-    <link rel="stylesheet" href="./lib/css/reset.css">
-    <link rel="stylesheet" href="./lib/css/slick.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
     <link rel="stylesheet" href="./lib/css/fullpage.css">
     <link rel="stylesheet" href="./portfolio.css">
     <script src="./lib/js/jquery-1.12.4.min.js"></script>
@@ -21,12 +20,14 @@
     <header id="header">
         <h1>
             <a href="#intro">
-                <img src="./lib/svg/1x/Asset1.png" alt="">
+                <img src="./lib/svg/1x/Asset1.png" alt="Top">
+                첫화면으로
             </a>
         </h1>
+        <div class="header_right"></div>
         <nav>
             <ul>
-                <li><a href="#intro"></a></li>
+                <li><a href="#intro">Intro</a></li>
                 <li><a href="#Portfolio_01">01</a></li>
                 <li><a href="#Portfolio_02">02</a></li>
                 <li><a href="#Portfolio_03">03</a></li>
@@ -35,8 +36,9 @@
                 <li><a href="#Profile">profile</a></li>
             </ul>
         </nav>
+        <div id="Cover"></div>
         <div class="cover_btn">
-            <i class="xi-bars"></i>
+            <span>cover_btn</span>
         </div>
     </header>
     <main id="main">
@@ -44,11 +46,11 @@
             <div class="container">
                 <div class="slogan">
                     <h2><span class="slogan_txt"></span></h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Esse itaque culpa optio voluptates fuga ipsam pariatur quaerat? Nemo?</p>
+                    <p>안녕하세요, 신입 웹디자이너 권송이 입니다.</p>
                     <strong>SongE's portfolio 2022</strong>
                 </div>
                 <figure>
-                    <img src="../lib/base/painting-gffa4c7106_700.jpg" alt="SongE's portfolio 2022">
+                    <img src="./lib/base/se1.png"alt="SongE's portfolio 2022">
                 </figure>
             </div>
             <a href="#Portfolio_01" class="wheel">
@@ -57,16 +59,9 @@
         </section>        
         <section class="section Portfolio_01">
             <div class="container">
-                <div class="itm mockup">
-                    <figure>
-                        <a href="https://song2berry.github.io/pf04/" target="_blank">
-                        <img src="./lib/base/pf04_morebella.png" alt="Portfolio_01">
-                        </a>
-                    </figure>
-                </div>
                 <div class="desc">
                     <h3>Morebella</h3>
-                    <p>코스메틱 이너뷰티 브랜드 사이트</p>
+                    <p>코스메틱 이너뷰티 브랜드 사이트 메인화면 리뉴얼작업(반응형)</p>
                     <dl>
                         <dt>Fonts</dt>
                         <dd>"NotoSerif", "Montserrat", "Cormorant+Garamond"</dd>
@@ -74,8 +69,8 @@
                     <dl>
                         <dt>Colors</dt>
                         <dd>
-                            <span></span> <strong>#817E71</strong>
                             <span></span> <strong>#645F4F</strong>
+                            <span></span> <strong>#817E71</strong>
                             <span></span> <strong>#865757</strong>
                             <span></span> <strong>#E2E0D8</strong>
                         </dd>
@@ -86,27 +81,35 @@
                     </dl>
                     <ul>
                         <li><a href="https://song2berry.github.io/pf04/" target="_blank">Github link</a></li>
-                        <li><a href="#!">Style guide</a></li>
+                        <li><a href="https://song2berry.github.io/styleguide/styleguide01_morebella.pdf" target="_blank">Style Guide</a></li>
                     </ul>
                 </div>
+                <div class="itm mockup">
+                    <figure>
+                        <a href="https://song2berry.github.io/pf04/" target="_blank">
+                        <img src="./lib/base/pf04_morebella.png" alt="Portfolio_01">
+                        </a>
+                    </figure>
+                </div>
+                <div class="pointer"><img src="./lib/base/point.png" alt=""></div>
             </div>
         </section>
         <section class="section Portfolio_02">
             <div class="container">
                 <div class="desc">
                     <h3>KAZUMI</h3>
-                    <p>스타일리쉬 캠핑브랜드 카즈미</p>
+                    <p>스타일리쉬 캠핑브랜드 카즈미 메인화면 리뉴얼작업(반응형)</p>
                     <dl>
                         <dt>Fonts</dt>
-                        <dd>"NotoSerif", "Montserrat", "Cormorant+Garamond"</dd>
+                        <dd>"Noto Sans KR", "Poppins"</dd>
                     </dl>
                     <dl>
                         <dt>Colors</dt>
                         <dd>
-                            <span></span> <strong>#817E71</strong>
-                            <span></span> <strong>#645F4F</strong>
-                            <span></span> <strong>#865757</strong>
-                            <span></span> <strong>#E2E0D8</strong>
+                            <span></span> <strong>#457379</strong>
+                            <span></span> <strong>#2C4042</strong>
+                            <span></span> <strong>#78979b</strong>
+                            <span></span> <strong>#5F7D81</strong>
                         </dd>
                     </dl>
                     <dl>
@@ -115,24 +118,157 @@
                     </dl>
                     <ul>
                         <li><a href="https://song2berry.github.io/pf05/" target="_blank">Github link</a></li>
-                        <li><a href="#!">Style guide</a></li>
+                        <li><a href="https://song2berry.github.io/styleguide/styleguide02_kazumi.pdf" target="_blank">Style Guide</a></li>
                     </ul>
                 </div>
                 <div class="itm mockup">
                     <figure>
                         <a href="https://song2berry.github.io/pf05/" target="_blank">
-                        <img src="./lib/base/pf05_kazumi.png" alt="Portfolio_01">
+                        <img src="./lib/base/pf05_kazumi.png" alt="Portfolio_02">
                         </a>
                     </figure>
                 </div>
+                <div class="pointer"><img src="./lib/base/point.png" alt=""></div>
             </div>
         </section>
-        <section class="section Portfolio_03">03</section>
-        <section class="section Portfolio_04">04</section>
-        <section class="section Portfolio_05">05</section>
-        <section class="section Profile">Profile</section>
+        <section class="section Portfolio_03">
+            <div class="container">
+                <div class="desc">
+                    <h3>서울디자인고등학교</h3>
+                    <p>학교 홈페이지 메인화면 리뉴얼작업(반응형)</p>
+                    <dl>
+                        <dt>Fonts</dt>
+                        <dd>"Noto Serif KR", "Montserrat", "Cormorant+Garamond"</dd>
+                    </dl>
+                    <dl>
+                        <dt>Colors</dt>
+                        <dd>
+                            <span></span> <strong>#67865b</strong>
+                            <span></span> <strong>#A4AA48</strong>
+                            <span></span> <strong>#444444</strong>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Library</dt>
+                        <dd>jquery, slick slide, YTPlayer</dd>
+                    </dl>
+                    <ul>
+                        <li><a href="https://song2berry.github.io/pf07/" target="_blank">Github link</a></li>
+                        <li><a href="https://song2berry.github.io/styleguide/styleguide03_sdgo.pdf" target="_blank">Style Guide</a></li>
+                    </ul>
+                </div>
+                <div class="itm mockup">
+                    <figure>
+                        <a href="https://song2berry.github.io/pf07/" target="_blank">
+                        <img src="./lib/base/pf07_sdgo.jpg" alt="Portfolio_03">
+                        </a>
+                    </figure>
+                </div>
+                <div class="pointer"><img src="./lib/base/point.png" alt=""></div>
+            </div>
+        </section>
+        <section class="section Portfolio_04">
+            <div class="container">
+                <div class="itm mockup">
+                    <figure>
+                        <a href="https://song2berry.github.io/trn02/" target="_blank">
+                        <img src="./lib/base/trn02_seoga.jpg" alt="Portfolio_01">
+                        </a>
+                    </figure>
+                </div>
+                <div class="pointer1"><img src="./lib/base/point.png" alt=""></div>
+                <div class="desc">
+                    <h3>서가앤쿡</h3>
+                    <p>사이트 따라만들기실습</p>
+                    <dl>
+                        <dt>Fonts</dt>
+                        <dd>"Noto Sans KR", "Montserrat"</dd>
+                    </dl>
+                    <dl>
+                        <dt>Colors</dt>
+                        <dd>
+                            <span></span> <strong>#F5F2ED</strong>
+                            <span></span> <strong>#E6E7E2</strong>
+                            <span></span> <strong>#333333</strong>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Library</dt>
+                        <dd>jquery, fullpage, animate</dd>
+                    </dl>
+                    <ul>
+                        <li><a href="https://song2berry.github.io/trn02/" target="_blank">Github link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section Portfolio_05">
+            <div class="container">
+                <div class="itm mockup">
+                    <figure>
+                        <a href="https://song2berry.github.io/trn03/" target="_blank">
+                        <img src="./lib/base/trn03_sajo.jpg" alt="Portfolio_01">
+                        </a>
+                    </figure>
+                </div>
+                <div class="pointer1"><img src="./lib/base/point.png" alt=""></div>
+                <div class="desc">
+                    <h3>사조참치</h3>
+                    <p>사이트 따라만들기실습</p>
+                    <dl>
+                        <dt>Fonts</dt>
+                        <dd>"Noto Serif KR", "Noto Sans KR" </dd>
+                    </dl>
+                    <dl>
+                        <dt>Colors</dt>
+                        <dd>
+                            <span></span> <strong>#002E6A</strong>
+                            <span></span> <strong>#D22229</strong>
+                            <span></span> <strong>#dddddd</strong>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Library</dt>
+                        <dd>jquery, slick slide, YTPlayer</dd>
+                    </dl>
+                    <ul>
+                        <li><a href="https://song2berry.github.io/trn03/" target="_blank">Github link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section Profile">
+        <div class="container">
+            <div class="gooyee">구이</div>
+            <div class="title">
+                <h3>베이직(Basic)에 차분한 감성 한스푼.</h3>
+                <p>"아름답고 화려한 기술도 좋지만, 기본기에 충실하고<br>
+                    최적의 사용자 경험을 제공하는 것을 목표로 하는<br>
+                    웹 디자이너가 되겠습니다."</p>
+                <strong><a href="https://open.kakao.com/me/song2berry" target="_blank">Contact me</a></strong>
+            </div>
+            <div class="skills">
+                <div class="skills1">
+                <strong>권송이</strong><br>
+                <span>부산 그린컴퓨터아카데미<br>반응형 웹디자인(UIUX) & 웹퍼블리셔 디지털 실무 양성과정 수료</span>
+                </div>
+                <div class="skills2">
+                <strong>사용합니다</strong><br>
+                <span>HTML, CSS, JS</span><br>
+                <span>포토샵</span><br>
+                <span>일러스트</span><br>
+                <span>프리미어 프로</span>
+                </div>
+            </div>
+            <div class="cite">
+                <strong>Intro 이미지 출처:</strong>
+                <strong><a href="https://meiker.io/play/13185/online.html" target="_blank">https://meiker.io/play/13185/online.html</a><br></strong>
+                <span>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</span>
+            </div>
+        </div>
+        </section>
     </main>
-    <footer id="footer">
+    <footer id="Footer">
         <div class="toTop">
             <a href="#intro"><i class="xi-arrow-top"></i></a>
         </div>
@@ -141,5 +277,15 @@
         </address>
     </footer>
 </div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="bbq">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5"
+                result="bbq" />
+            <feBlend in="SourceGraphic" in="bbq" />
+        </filter>
+    </defs>
+</svg>
 </body>
 </html>
