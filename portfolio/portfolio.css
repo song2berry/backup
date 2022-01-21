@@ -99,8 +99,8 @@ width:50%;height:50%;background:var(--bc);transition:0.3s;border-radius:50%;}
 
 .intro figure {position:relative;}
 .intro .container {width: 60rem;}
-.intro .container::after {content:"";position:absolute;top:2.5rem;right:11rem;display:block;
-width:5rem;height:5rem;background:var(--bc);border-radius:50%;opacity:0.7;
+.intro .container::after {content:"";position:absolute;top:2rem;right:3rem;display:block;
+width:5rem;height:5rem;background:var(--lc);border-radius:50%;opacity:0.7;
 -webkit-animation: blink-2 4s infinite both;
 animation: blink-2 3s infinite both;}
 
@@ -243,12 +243,15 @@ font-size:1rem;font-weight:100;border-radius:0.3rem;}
 .Portfolio_03 .desc dd span:nth-of-type(2) {background:#a4aa48;}
 .Portfolio_03 .desc dd span:nth-of-type(3) {background:#444444;}
 
-.Portfolio_04 {background: linear-gradient(to bottom right, #575757, #8a8a8a);}
+.Portfolio_04 {background: linear-gradient(to bottom right, #575757, #8a8a8a);
+text-align: right;}
 .Portfolio_04 .desc dd span:nth-of-type(1) {background:#F5F2ED;}
 .Portfolio_04 .desc dd span:nth-of-type(2) {background:#E6E7E2;}
 .Portfolio_04 .desc dd span:nth-of-type(3) {background:#333333;}
+.Portfolio_04 .desc ul a {align-items: right;}
 
-.Portfolio_05 {background: linear-gradient(to bottom right, #2c4f7e, #4e4e4e);}
+.Portfolio_05 {background: linear-gradient(to bottom right, #2c4f7e, #4e4e4e);
+text-align: right;}
 .Portfolio_05 .desc dd span:nth-of-type(1) {background:#002E6A;}
 .Portfolio_05 .desc dd span:nth-of-type(2) {background:#D22229;}
 .Portfolio_05 .desc dd span:nth-of-type(3) {background:#dddddd;}
