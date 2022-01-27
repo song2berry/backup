@@ -194,7 +194,7 @@ height:0.5rem;background:#444;border-radius:0.1rem;animation:wheel 1.5s infinite
 /* {outline: 1px solid #f00;}*/
 .section {background: linear-gradient(to bottom right, #847799, #8b7255);}
 .section img {max-width:100%;}
-.section .mockup {position: relative; background:url(./lib/base/mockupmac.png) no-repeat center bottom/100%;
+.section .mockup {position: relative; background:url(./portfolio/lib/base/mockupmac.png) no-repeat center bottom/100%;
 padding:3% 3% 27% 3.5%;}
 .container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:5rem;
 align-items:center;width:70rem;margin:0 auto;}
@@ -264,7 +264,7 @@ text-align: right;}
     
     .section {background: linear-gradient(to bottom right, #847799, #8b7255)}
     .section img {max-width:100%;}
-    .section .mockup {background:url(./lib/base/mockupmac.png) no-repeat center top/80%;
+    .section .mockup {background:url(./portfolio/lib/base/mockupmac.png) no-repeat center top/80%;
     padding:3% 13% 30% 13%;}
     .container {position:relative;display:grid;grid-template-columns:repeat(1,1fr);gap:0;
     align-items:center;width:95%;margin:0 auto;}
